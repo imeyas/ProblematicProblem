@@ -19,16 +19,17 @@ namespace ProblematicProblem
             var goOnYesNo = Console.ReadLine().ToLower();
             //var cont = Convert.ToBoolean(Console.ReadLine());
 
-            //if (goOnYesNo == "yes")
-            //{
-            //    cont = true;
-            //}
-            //else
-            //{
-            //    cont = false;
-            //}
+            if (goOnYesNo == "yes")
+            {
+                cont = true;
+            }
+            else
+            {
+                cont = false;
+                Environment.Exit(0);
+            }
 
-            cont = (goOnYesNo == "yes") ? true : false;
+            //cont = (goOnYesNo == "yes") ? true : false;
 
             Console.Write("We are going to need your information first! What is your name? ");
             string userName = Console.ReadLine();
